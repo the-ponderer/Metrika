@@ -496,7 +496,18 @@ footer {
 
     /* Большая картинка перед контактами */
     .picture {
-        height: 400px;
+        height: 520px;          /* побольше, чем 400px, чтобы влез текст */
+        position: relative;     /* нужно для absolute у .p3 */
+    }
+
+    .p3 {
+        position: absolute;
+        left: 20px;
+        right: 20px;            /* чтобы текст не прилипал к краю */
+        bottom: 40px;
+
+        font-size: 20px;
+        line-height: 26px;
     }
 
     /* Контакты – растягиваем на ширину и уменьшаем шрифты */
