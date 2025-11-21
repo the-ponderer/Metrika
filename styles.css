@@ -1,0 +1,631 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;  
+    
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* убираем горизонтальный скролл и белые поля справа */
+}
+
+.logo__link {
+    display: inline-block;
+    margin-right: 0;                /* убираем костыль с 440px */
+}
+
+.logo {
+    display: block;
+}
+
+
+.nav-section {
+    max-width: 1150px;      /* фикс-ширину заменили на максимум */
+    width: 100%;            /* пусть занимает всю доступную ширину */
+    margin: 33px auto 30px; /* сверху 33, снизу 30, центр по горизонтали */
+    padding: 0 15px;        /* небольшой внутренний отступ, чтобы контент
+                               не прилипал к краям на маленьких экранах */
+}
+
+.nav-container {
+    display: flex;                  /* ставим логотип и меню в одну линию */
+    align-items: center;
+    justify-content: space-between; /* логотип слева, меню справа */
+    margin-top: 0;                  /* этот отступ уже есть у .nav-section */
+}
+
+.nav {
+    display: flex;
+}
+.nav__link {
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: rgb(103, 101, 97);
+}
+
+section {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    margin-top: 80px;   /* расстояние под шапкой */
+    margin-bottom: 100px;
+}
+
+.about {
+    margin-top: 120px;  /* расстояние между блоками */
+}
+
+/* --- ABOUT (первый блок) --- */
+
+#About h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* ⬇️ вот сюда вставляешь корректировку отступов */
+
+#About h1 {
+    margin-top: 30px;
+}
+
+#About .img1 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#About h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* Проекты — общий контейнер секции */
+#Projects {
+    max-width: 1150px;      /* ширина контента как в hero / About */
+    width: 100%;
+    margin: 120px auto 120px;/* сверху и снизу по 120px, по центру */
+    padding: 0 15px;        /* небольшой внутренний отступ по бокам */
+}
+
+#Projects h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+/* каждая карточка проекта */
+#Projects .project {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* картинки в карточках проектов */
+#Projects .project img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Не трогаем кнопку "Подробнее" */
+#Projects .project .more img {
+    width: auto !important;
+    height: auto !important;
+    display: inline-block !important;
+    object-fit: contain !important;
+}
+
+/* исключение для маленькой кнопки "Подробнее" */
+.more img {
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+/* Отступ сверху только у секций после первой */
+main > section:not(:first-of-type) {
+    padding-top: 128px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.img1 {
+    position: relative;
+    width: 1155px;
+    height: 500px;
+    text-align: left;
+    background-image: url(../resources/Rectangle\ 1.png);
+    background-size: cover;
+    
+}
+
+.p1 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.32px;
+    color: #ffffffff;
+    width: 440px;
+    height: 81px;
+    bottom: 40px;
+    left: 40px;
+    letter-spacing: -0.01em;
+}
+
+.p2 {
+    font-size: 45px;
+    font-weight: 400; 
+    line-height: 61.41px;
+    letter-spacing: -0.03em;
+    margin-top: 30px;
+}
+
+.a1 {
+    text-decoration: none;
+    background-color: #AD1818;
+    padding: 20px 40px;
+    display: inline-block;
+    margin-top: 30px;
+    color: #ffffffff;
+    border-radius: 5px;
+}
+
+
+.project {
+    margin-bottom: 90px;
+}
+
+.img_c3 {
+    width: 1150px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 25px;
+}
+
+.more {
+    width: 127px;
+    height: 27px;
+}
+
+.a2 {
+    display: block;
+    max-width: 1150px;
+    margin: 0 auto 160px;
+    height: 153px;
+    line-height: 153px;
+    border: 1px solid #AD1818;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #AD1818;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+}
+
+.a2:hover {
+    background-color: #AD1818;
+    color: #ffffffff;
+}
+
+
+.black_container {
+    margin-top: 150px;
+    background-color: black;
+    padding: 150px;
+}
+
+
+
+.service:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.service {
+    margin-bottom: 60px;
+}
+
+.b {
+    color: #ffffffff;
+}
+
+h4 {
+    color: #ffffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    margin-bottom: 25px;
+}
+
+.picture {
+    width: 100%;
+    height: 717px;
+    background-image: url(../resources/Rectangle\ 10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p3 {
+    padding-left: 125px;
+    padding-top: 575px;
+    width: 553px;
+    height: 82px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #ffffffff;
+    letter-spacing: -0.03em;
+}
+
+.contacts {
+    width: 473px;
+    height: 217px;
+    padding-left: 125px;
+    padding-top: 185px;
+    padding-bottom: 150px;
+}
+
+.phone-before:before {
+    content: "";
+    display: block;
+    margin-bottom: 12px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../resources/Vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.phone {
+    text-decoration: none;
+    width: 472px;
+    height: 60px;
+    color: black;
+    padding-top: 32px;
+    font-size: 45px;
+    letter-spacing: -0.03em;
+}
+
+.p4 {
+    margin-top: 30px;
+}
+
+.mail {
+    font-size: 45px;
+    color: #535353;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: black;
+    padding: 60px 0 30px 0;
+}
+
+.footer-nav {
+    text-align: center;
+}
+
+.nav_link {
+    margin-right: 55px;
+    text-decoration: none;
+    color: #ffffffff;
+    text-align: center;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+    color: rgb(103, 101, 97);
+}
+
+.p5 {
+    text-align: center;
+    margin-top: 87px;
+    color: #535353;
+}
+
+
+/* Главный контейнер сайта */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1199px) {
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main > section:not(:first-of-type) {
+        padding-top: 128px;
+    }
+
+    .img1 {
+        width: 100%;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .p1 {
+        width: 40%;
+        font-size: 15px;
+        line-height: 27.32px;
+        left: 30px;
+    }
+    .p2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .img_c3 {
+        width: 100%;
+    }
+} 
+
+/*
+@media (max-width: 767px) {
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main > section:not(:first-of-type) {
+        padding-top: 128px;
+    }
+
+    .img1 {
+        width: 100%;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+
+    .p1 {
+        font-size: 16px;
+        line-height: 20px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .p2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .a1 {
+        width: 100%;
+        text-align: center;
+    }
+    .a2 {
+        height: 100px;
+        line-height: 100px;
+    }
+} */
+
+@media (max-width: 767px) {
+    /* базовая типографика и отступы */
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    /* шапка */
+    .nav-container {
+        width: 100%;
+        padding: 16px 20px 24px;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .nav__link {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    /* все секции делаем на всю ширину экрана */
+    section {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* герой-блок */
+    #About > section:first-of-type {
+        padding-bottom: 32px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.1;
+        margin-bottom: 24px;
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+        min-height: 260px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .p1 {
+        font-size: 14px;
+        line-height: 18px;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+    }
+
+    /* блок "О нас" */
+    #About h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .p2 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    .a1 {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /* ПРОЕКТЫ */
+
+    #Projects {
+        padding-top: 56px;
+    }
+
+    #Projects .section2 {
+        padding: 0;
+        margin-bottom: 48px;
+    }
+
+    #Projects .section2 img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* маленькая картинка "Подробнее →" — НЕ растягиваем */
+    #Projects .more img {
+        width: auto;
+        height: 24px;
+    }
+
+    /* кнопка "Смотреть все проекты" */
+    .a3 {
+        display: block;
+        width: 100%;
+        margin: 8px 0 64px;
+        text-align: center;
+    }
+
+    .a3 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* УСЛУГИ (чёрный блок) */
+
+    .black_container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 56px 0 56px;
+    }
+
+    #Services {
+        padding: 0 20px 32px;
+    }
+
+    #Services h3,
+    #Services h4,
+    #Services h5,
+    #Services h6 {
+        margin-bottom: 16px;
+    }
+
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px 40px;
+        box-sizing: border-box;
+    }
+
+    /* блок с последним проектом (большая фотка внизу перед контактами) */
+    .container_project2,
+    .container_project2 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* КОНТАКТЫ */
+
+    #Contacts {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    #Contacts h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    #Contacts p,
+    #Contacts a {
+        font-size: 16px;
+    }
+
+    /* футер */
+
+    footer {
+        padding: 32px 20px 24px;
+    }
+
+    .footer_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .footer_nav a {
+        font-size: 12px;
+    }
+
+    .footer__info {
+        font-size: 10px;
+    }
+}
