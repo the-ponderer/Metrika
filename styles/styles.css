@@ -503,12 +503,12 @@ footer {
     /* Подпись на большой картинке перед контактами */
     .p3 {
     position: absolute;
-    left: -60px;
+    left: -70px;
     right: 24px;
     bottom: 80px;      /* поднимаем над краем, чтобы не прилипал */
 
-    font-size: 30px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 30px;
     }
 
     /* Контакты – растягиваем на ширину и уменьшаем шрифты */
