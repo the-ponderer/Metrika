@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document 1</title>
+    <title>Metric</title>
 
     <link rel="stylesheet" href="styles/reset.css">
  
@@ -15,6 +15,26 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <header class="mobile-header">
+    <div class="mobile-header__container">
+        <div class="mobile-header__logo">
+            <img src="resources/Метрика.png" alt="Metrika">
+        </div>
+
+        <button class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#About">О НАС</a>
+        <a href="#Projects">ПРОЕКТЫ</a>
+        <a href="#Services">УСЛУГИ</a>
+        <a href="#Contacts">КОНТАКТЫ</a>
+    </nav>
+</header>
     <head>
        <div class="nav-section">
             <div class="nav-container">
@@ -113,6 +133,15 @@
             </div>
             <p class="p5">студия дизайна интерьера Метрика — 2023</p>
         </footer> 
-    </div>   
+    </div>
+    <script>
+const burger = document.getElementById('burgerBtn');
+const menu = document.getElementById('mobileMenu');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('open');
+});
+</script>
 </body>
 </html>
