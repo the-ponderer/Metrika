@@ -504,7 +504,7 @@ footer {
     .p3 {
     position: absolute;
     left: -70px;
-    right: 324px;
+    right: 624px;
     bottom: 90px;      /* поднимаем над краем, чтобы не прилипал */
 
     font-size: 25px;
