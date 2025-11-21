@@ -516,6 +516,20 @@ footer {
         margin-top: 80px;
         padding: 40px 0 20px;
     }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    .footer-nav a {
+        white-space: nowrap; /* чтобы длинные слова не переносились */
+        font-size: 16px; /* можешь уменьшить, если не влезает */
+    }
 }
 
 /* ===== МОБИЛЬНАЯ ШАПКА ===== */
