@@ -507,8 +507,8 @@ footer {
     right: 24px;
     bottom: 80px;      /* поднимаем над краем, чтобы не прилипал */
 
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 40px;
     }
 
     /* Контакты – растягиваем на ширину и уменьшаем шрифты */
