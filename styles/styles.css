@@ -433,199 +433,146 @@ footer {
     }
 } */
 
+/* ================================
+      MOBILE (до 767px)
+=================================*/
 @media (max-width: 767px) {
-    /* базовая типографика и отступы */
-    body {
-        font-size: 16px;
-    }
 
-    main {
-        padding-top: 40px;
-    }
-
-    /* шапка */
-    .nav-container {
+    /* Контейнеры */
+    section {
         width: 100%;
-        padding: 16px 20px 24px;
-        box-sizing: border-box;
+        padding: 0 20px;
+        margin: 0 auto 60px;
+    }
+
+    /* Шапка */
+    .nav-section {
+        padding: 20px;
     }
 
     .nav {
-        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+        font-size: 15px;
+        justify-content: center;
     }
 
-    .nav__link {
-        margin-left: 0;
-        font-size: 14px;
-    }
-
-    /* все секции делаем на всю ширину экрана */
-    section {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    /* герой-блок */
-    #About > section:first-of-type {
-        padding-bottom: 32px;
-    }
-
+    /* БОЛЬШОЙ ЗАГОЛОВОК */
     h1 {
-        font-size: 32px;
-        line-height: 1.1;
-        margin-bottom: 24px;
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 25px;
     }
 
+    /* Первый экран */
     .img1 {
         width: 100%;
-        height: auto;
-        min-height: 260px;
-        background-size: cover;
-        background-position: 50% 50%;
+        height: 300px;
+        background-size: cover !important;
+        background-position: center !important;
+        margin-bottom: 20px;
     }
 
     .p1 {
-        font-size: 14px;
-        line-height: 18px;
-        bottom: 16px;
-        left: 16px;
-        right: 16px;
+        font-size: 15px;
+        line-height: 22px;
+        padding-right: 15px;
     }
 
-    /* блок "О нас" */
-    #About h2 {
-        font-size: 20px;
-        margin-bottom: 16px;
+    /* Блок "О нас" */
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 
     .p2 {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 25px;
     }
 
     .a1 {
-        width: 100%;
-        text-align: center;
-        display: inline-block;
-    }
-
-    /* ПРОЕКТЫ */
-
-    #Projects {
-        padding-top: 56px;
-    }
-
-    #Projects .section2 {
-        padding: 0;
-        margin-bottom: 48px;
-    }
-
-    #Projects .section2 img {
         display: block;
+        text-align: center;
+        height: 54px;
+        line-height: 54px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    /* ПРОЕКТЫ — САМЫЙ ВАЖНЫЙ ЧАСТЬ */
+    #Projects img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
 
-    /* маленькая картинка "Подробнее →" — НЕ растягиваем */
-    #Projects .more img {
-        width: auto;
-        height: 24px;
+    #Projects .project {
+        margin-bottom: 60px;
     }
 
-    /* кнопка "Смотреть все проекты" */
-    .a3 {
-        display: block;
+    #Projects h3 {
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    /* Подробнеее → (картинка) */
+    .more img {
+        width: 120px !important;
+        height: auto !important;
+    }
+
+
+    /* УСЛУГИ */
+    #Services .service {
         width: 100%;
-        margin: 8px 0 64px;
-        text-align: center;
+        margin-bottom: 60px;
     }
 
-    .a3 img {
+    #Services .img4 {
         width: 100%;
-        height: auto;
-        display: block;
+        height: 260px;
+        background-size: cover !important;
+        background-position: center !important;
+        margin-bottom: 15px;
     }
 
-    /* УСЛУГИ (чёрный блок) */
-
-    .black_container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 56px 0 56px;
-    }
-
-    #Services {
-        padding: 0 20px 32px;
-    }
-
-    #Services h3,
-    #Services h4,
-    #Services h5,
-    #Services h6 {
-        margin-bottom: 16px;
-    }
-
-    .section3,
-    .section4,
-    .section5,
-    .section6 {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px 40px;
-        box-sizing: border-box;
-    }
-
-    /* блок с последним проектом (большая фотка внизу перед контактами) */
-    .container_project2,
-    .container_project2 img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
+    .p3 {
+        font-size: 22px;
+        line-height: 30px;
+        padding-right: 15px;
     }
 
     /* КОНТАКТЫ */
-
-    #Contacts {
-        padding-top: 64px;
-        padding-bottom: 64px;
+    #Contacts .phone {
+        font-size: 28px;
+        margin-top: 20px;
     }
 
-    #Contacts h2 {
+    .p4 {
         font-size: 20px;
-        margin-bottom: 16px;
     }
 
-    #Contacts p,
-    #Contacts a {
-        font-size: 16px;
+    .mail {
+        font-size: 22px;
     }
 
-    /* футер */
-
+    /* Футер */
     footer {
-        padding: 32px 20px 24px;
+        padding: 40px 20px;
     }
 
-    .footer_nav {
+    .footer-nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 16px;
-        margin-bottom: 24px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .footer_nav a {
-        font-size: 12px;
-    }
-
-    .footer__info {
-        font-size: 10px;
+    .p5 {
+        text-align: center;
+        font-size: 14px;
     }
 }
