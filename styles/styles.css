@@ -500,17 +500,15 @@ footer {
         position: relative;     /* нужно для absolute у .p3 */
     }
 
+    /* Подпись на большой картинке перед контактами */
     .p3 {
-        position: absolute;
-        left: 20px;
-        right: 20px;            /* чтобы текст не прилипал к краю */
-        bottom: 40px;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 40px;      /* поднимаем над краем, чтобы не прилипал */
 
-        font-size: 20px;
-        line-height: 26px;
-        bottom: 16px;
-        left: 16px;
-        right: 16px;
+    font-size: 20px;
+    line-height: 26px;
     }
 
     /* Контакты – растягиваем на ширину и уменьшаем шрифты */
