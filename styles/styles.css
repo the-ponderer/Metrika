@@ -409,7 +409,7 @@ footer {
     /* ABOUT */
     #About {
     /*    padding-top: 40px;*/
-        padding-top: -90 !important;
+        padding-top: 0 !important;
     }
 
     #About section:first-of-type {
@@ -579,7 +579,7 @@ footer {
     /* Заголовки секций (О нас, Проекты, Услуги) — поменьше отступ сверху */
     h2 {
         margin-top: 24px;
-        margin-bottom: 20px;
+        margin-bottom: -120px;
     }
 
     /* Чёрный блок с услугами — убираем огромный разрыв под кнопкой
