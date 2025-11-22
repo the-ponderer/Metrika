@@ -504,8 +504,8 @@ footer {
     .p3 {
     position: absolute;
     left: -70px;
-    right: 1124px;
-    bottom: 90px;      /* поднимаем над краем, чтобы не прилипал     right: 1124px; */
+    right: 24px;
+    bottom: 90px;      /* поднимаем над краем, чтобы не прилипал */
 
     font-size: 25px;
     line-height: 40px;
@@ -544,6 +544,23 @@ footer {
     .footer-nav a {
         white-space: nowrap; /* чтобы длинные слова не переносились */
         font-size: 12px; /* можешь уменьшить, если не влезает */
+    }
+
+    section {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Если есть специфичные классы секций — тоже уменьшаем */
+    #About,
+    #Projects,
+    #Services,
+    #Contacts,
+    .big-section {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 
 
