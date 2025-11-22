@@ -408,7 +408,8 @@ footer {
 
     /* ABOUT */
     #About {
-        padding-top: 40px;
+    /*    padding-top: 40px;*/
+        padding-top: 0 !important;
     }
 
     #About section:first-of-type {
@@ -477,7 +478,7 @@ footer {
 
     /* Услуги: чёрный блок на всю ширину, карточки одна под другой */
     .black_container {
-        margin-top: 80px;
+        margin-top: 40px;
         padding: 60px 20px;
     }
 
