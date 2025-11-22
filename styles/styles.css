@@ -479,7 +479,7 @@ footer {
 
     /* Услуги: чёрный блок на всю ширину, карточки одна под другой */
     .black_container {
-        margin-top: 40px;
+        margin-top: -140px;
         padding: 60px 20px;
     }
 
