@@ -563,6 +563,30 @@ footer {
         padding-bottom: 0 !important;
     }
 
+    #About,
+    #Projects {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+  /* Отступы вокруг первого экрана с большим заголовком и картинкой */
+    .hero {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    /* Заголовки секций (О нас, Проекты, Услуги) — поменьше отступ сверху */
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Чёрный блок с услугами — убираем огромный разрыв под кнопкой
+        "Смотреть все проекты" */
+    .black_container {
+        margin-top: 40px;
+        padding: 40px 16px 56px;
+    }
 
 }
 
